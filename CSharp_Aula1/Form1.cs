@@ -32,9 +32,21 @@ namespace CSharp_Aula1
             int N1 = int.Parse(txtN1.Text);
             int N2 = int.Parse(txtN2.Text);
             int Resultado = N1 + N2;
-            if (Resultado < 10) {  
+            if (Resultado > 10)
             {
-                    txtResultado.Text = "O valor é: " + Resultado.ToString() + "que é maior que 10";
+                    txtResultado.Text = "O valor é : " + Resultado.ToString() + "  que é maior que 10.";
+            }
+            else
+            {
+                    if (Resultado < 10)
+                    {
+                        txtResultado.Text = "O valor é : " + Resultado.ToString() + "  que é menor que 10.";
+                    }
+                    else
+                    {
+                        txtResultado.Text = "O valor é : " + Resultado.ToString() + "  igual a 10.";
+                    }
+
             }
         }
     }

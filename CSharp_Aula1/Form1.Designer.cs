@@ -157,7 +157,7 @@
             // 
             this.txtResultado.Location = new System.Drawing.Point(272, 92);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(100, 20);
+            this.txtResultado.Size = new System.Drawing.Size(207, 20);
             this.txtResultado.TabIndex = 13;
             // 
             // Form1
