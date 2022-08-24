@@ -42,6 +42,13 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnSE = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.btnSoma = new System.Windows.Forms.Button();
+            this.lblValor = new System.Windows.Forms.Label();
+            this.lblQtd = new System.Windows.Forms.Label();
+            this.lblRst = new System.Windows.Forms.Label();
+            this.txtRst = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.txtQtd = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -160,11 +167,76 @@
             this.txtResultado.Size = new System.Drawing.Size(207, 20);
             this.txtResultado.TabIndex = 13;
             // 
+            // btnSoma
+            // 
+            this.btnSoma.Location = new System.Drawing.Point(564, 30);
+            this.btnSoma.Name = "btnSoma";
+            this.btnSoma.Size = new System.Drawing.Size(163, 23);
+            this.btnSoma.TabIndex = 14;
+            this.btnSoma.Text = "Soma";
+            this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
+            // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(519, 5);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(21, 13);
+            this.lblValor.TabIndex = 15;
+            this.lblValor.Text = "N3";
+            // 
+            // lblQtd
+            // 
+            this.lblQtd.AutoSize = true;
+            this.lblQtd.Location = new System.Drawing.Point(499, 95);
+            this.lblQtd.Name = "lblQtd";
+            this.lblQtd.Size = new System.Drawing.Size(105, 13);
+            this.lblQtd.TabIndex = 16;
+            this.lblQtd.Text = "Quantidade da soma";
+            // 
+            // lblRst
+            // 
+            this.lblRst.AutoSize = true;
+            this.lblRst.Location = new System.Drawing.Point(521, 69);
+            this.lblRst.Name = "lblRst";
+            this.lblRst.Size = new System.Drawing.Size(23, 13);
+            this.lblRst.TabIndex = 17;
+            this.lblRst.Text = "Rst";
+            // 
+            // txtRst
+            // 
+            this.txtRst.Location = new System.Drawing.Point(564, 62);
+            this.txtRst.Name = "txtRst";
+            this.txtRst.Size = new System.Drawing.Size(163, 20);
+            this.txtRst.TabIndex = 18;
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(564, 2);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(163, 20);
+            this.txtValor.TabIndex = 18;
+            // 
+            // txtQtd
+            // 
+            this.txtQtd.Location = new System.Drawing.Point(610, 91);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(163, 20);
+            this.txtQtd.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtQtd);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.txtRst);
+            this.Controls.Add(this.lblRst);
+            this.Controls.Add(this.lblQtd);
+            this.Controls.Add(this.lblValor);
+            this.Controls.Add(this.btnSoma);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnSE);
             this.Controls.Add(this.lblResultado);
@@ -202,6 +274,13 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnSE;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.Button btnSoma;
+        private System.Windows.Forms.Label lblValor;
+        private System.Windows.Forms.Label lblQtd;
+        private System.Windows.Forms.Label lblRst;
+        private System.Windows.Forms.TextBox txtRst;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.TextBox txtQtd;
     }
 }
 

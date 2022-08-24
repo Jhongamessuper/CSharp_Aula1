@@ -19,7 +19,7 @@ namespace CSharp_Aula1
 
         private void btnConcatenacao_Click(object sender, EventArgs e)
         {
-            string nome,sobrenome,nomeSobrenome;
+            string nome, sobrenome, nomeSobrenome;
             nome = txtNome.Text;
             sobrenome = txtSobrenome.Text;
             nomeSobrenome = nome + " " + sobrenome;
@@ -29,25 +29,39 @@ namespace CSharp_Aula1
 
         private void btnSE_Click(object sender, EventArgs e)
         {
-            int N1 = int.Parse(txtN1.Text);
-            int N2 = int.Parse(txtN2.Text);
-            int Resultado = N1 + N2;
-            if (Resultado > 10)
+            int n1 = int.Parse(txtN1.Text);
+            int n2 = int.Parse(txtN2.Text);
+            int resultado = n1 + n2;
+            if (resultado > 10)
             {
-                    txtResultado.Text = "O valor é : " + Resultado.ToString() + "  que é maior que 10.";
+                txtResultado.Text = "O valor é : " + resultado.ToString() + "  que é maior que 10.";
             }
             else
             {
-                    if (Resultado < 10)
-                    {
-                        txtResultado.Text = "O valor é : " + Resultado.ToString() + "  que é menor que 10.";
-                    }
-                    else
-                    {
-                        txtResultado.Text = "O valor é : " + Resultado.ToString() + "  igual a 10.";
-                    }
+                if (resultado < 10)
+                {
+                    txtResultado.Text = "O valor é : " + resultado.ToString() + "  que é menor que 10.";
+                }
+                else
+                {
+                    txtResultado.Text = "O valor é : " + resultado.ToString() + "  igual a 10.";
+                }
+
+            }
+
+        }
+
+        private void btnSoma_Click(object sender, EventArgs e)
+        {
+            int valor,rst,qtd;
+            valor = valor + int.Parse(txtValor.Text);
+            txtRst.Text = valor.ToString();
+            txtValor.Text = "";
+
+            {
+ 
+            }
 
             }
         }
     }
-}
